@@ -20,6 +20,7 @@ targets:
     deploymentTarget: "17.0"
     sources:
       - path: Sources/BreakQuest
+      - path: Sources/BreakQuest/Assets.xcassets
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.foculoom.breakquest
@@ -39,8 +40,6 @@ targets:
       - path: Tests/BreakQuestTests
     dependencies:
       - target: BreakQuest
-      - target: BreakQuestWatch
-        embed: true
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.foculoom.breakquest.tests
@@ -56,16 +55,18 @@ targets:
     deploymentTarget: "10.0"
     sources:
       - path: Sources/BreakQuestWatch
+      - path: Sources/BreakQuestWatch/Assets.xcassets
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.foculoom.breakquest.watchkitapp
         PRODUCT_NAME: "BQ"
         INFOPLIST_FILE: Sources/BreakQuestWatch/Info.plist
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
-        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
         DEVELOPMENT_TEAM: "RZWT5WST77"
         CODE_SIGN_STYLE: Automatic
         SWIFT_VERSION: "6.0"
+        ARCHS: "arm64_32"
+        SKIP_INSTALL: YES
         MARKETING_VERSION: "1.0.0"
         CURRENT_PROJECT_VERSION: "20260226.1"
 

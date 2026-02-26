@@ -15,19 +15,12 @@
 		6217C74EF977C252AF8C321C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE6CA553C36D0D030D709048 /* Assets.xcassets */; };
 		729063439643C0E9529D2735 /* QuestRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC72AF249C853A365FC7225 /* QuestRootView.swift */; };
 		90EAC7666B17518260B70EDB /* WatchScreenshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87433E6BC4073057F9C04A8A /* WatchScreenshotTests.swift */; };
-		D00DCB086D692134445C1475 /* BreakQuestWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1C0F7A5047936962268F75A5 /* BreakQuestWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E27778B311495BCACA4BB3FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83B661611FCB6BFF0C85BC7 /* ContentView.swift */; };
 		E78888A8C2B03A6B5D0A95D1 /* BreakQuestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48DF8B727B8DB89FC2E6DEE /* BreakQuestTests.swift */; };
+		E8392B74C6C2CCF733C7EDFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85AE930FC914E56BCE3CF1EC /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A568EDDCD5716C77142D963A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DE7119D1DCCD0B5CF1982558 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 25BC59191F3252E9E2420405;
-			remoteInfo = BreakQuestWatch;
-		};
 		EDBB461C6E705EE5CC55F1E6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DE7119D1DCCD0B5CF1982558 /* Project object */;
@@ -36,20 +29,6 @@
 			remoteInfo = BreakQuest;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		A6A4467EAE47B7FFE71C9765 /* Embed Watch Content */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
-			dstSubfolderSpec = 16;
-			files = (
-				D00DCB086D692134445C1475 /* BreakQuestWatch.app in Embed Watch Content */,
-			);
-			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		06630C849970D3777E0BE0DC /* BreakQuestWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakQuestWatchApp.swift; sourceTree = "<group>"; };
@@ -61,6 +40,7 @@
 		54D056966F64B1C5B754A0B5 /* ScreenshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotTests.swift; sourceTree = "<group>"; };
 		707A0B3B71AE862D6D4B0522 /* BreakQuestTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = BreakQuestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C2507619B243A81BFE5961C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		85AE930FC914E56BCE3CF1EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87433E6BC4073057F9C04A8A /* WatchScreenshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchScreenshotTests.swift; sourceTree = "<group>"; };
 		9FC72AF249C853A365FC7225 /* QuestRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestRootView.swift; sourceTree = "<group>"; };
 		AE6CA553C36D0D030D709048 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -108,6 +88,7 @@
 		6EA93A0E498042668A402084 /* BreakQuest */ = {
 			isa = PBXGroup;
 			children = (
+				85AE930FC914E56BCE3CF1EC /* Assets.xcassets */,
 				EF593952AF0F57738F25EA9B /* BreakQuestApp.swift */,
 				E83B661611FCB6BFF0C85BC7 /* ContentView.swift */,
 				7C2507619B243A81BFE5961C /* Info.plist */,
@@ -181,6 +162,7 @@
 			buildConfigurationList = 60EAD57E9ABA6E9354D11504 /* Build configuration list for PBXNativeTarget "BreakQuest" */;
 			buildPhases = (
 				EC7326EF74AE46B95ED61B1A /* Sources */,
+				2D18DADE38B3E66F323357B7 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -198,13 +180,11 @@
 			buildConfigurationList = C99BB5F6DBA5C4624AA2ADA2 /* Build configuration list for PBXNativeTarget "BreakQuestTests" */;
 			buildPhases = (
 				56539309E1C2AA3973FA75AE /* Sources */,
-				A6A4467EAE47B7FFE71C9765 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				31E741E1D0A342F9DC7247FB /* PBXTargetDependency */,
-				69875A45A441E146946840E7 /* PBXTargetDependency */,
 			);
 			name = BreakQuestTests;
 			packageProductDependencies = (
@@ -258,6 +238,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2D18DADE38B3E66F323357B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8392B74C6C2CCF733C7EDFC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F45D4A80E68C2756150F2709 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -306,11 +294,6 @@
 			isa = PBXTargetDependency;
 			target = 79DE1E5D2676865F9A403D30 /* BreakQuest */;
 			targetProxy = EDBB461C6E705EE5CC55F1E6 /* PBXContainerItemProxy */;
-		};
-		69875A45A441E146946840E7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 25BC59191F3252E9E2420405 /* BreakQuestWatch */;
-			targetProxy = A568EDDCD5716C77142D963A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -390,7 +373,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 20260226.1;
+				CURRENT_PROJECT_VERSION = 20260225.1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -474,7 +457,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 20260226.1;
+				CURRENT_PROJECT_VERSION = 20260225.1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -523,10 +506,10 @@
 		A874E916BBF4370A020473AE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = arm64_32;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20260226.1;
+				CURRENT_PROJECT_VERSION = 20260225.1;
 				DEVELOPMENT_TEAM = RZWT5WST77;
 				INFOPLIST_FILE = Sources/BreakQuestWatch/Info.plist;
 				MARKETING_VERSION = 1.0.0;
@@ -543,10 +526,10 @@
 		AAA70BBD2094631901CC5404 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = arm64_32;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20260226.1;
+				CURRENT_PROJECT_VERSION = 20260225.1;
 				DEVELOPMENT_TEAM = RZWT5WST77;
 				INFOPLIST_FILE = Sources/BreakQuestWatch/Info.plist;
 				MARKETING_VERSION = 1.0.0;

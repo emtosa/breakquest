@@ -1,6 +1,4 @@
 screenshots_path "./AppStore/screenshots"
-skip_binary_upload true
-skip_metadata true
 overwrite_screenshots true
 platform "ios"
 force true

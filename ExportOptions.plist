@@ -14,5 +14,7 @@
     <string>automatic</string>
     <key>destination</key>
     <string>upload</string>
+    <key>allowProvisioningUpdates</key>
+    <true/>
 </dict>
 </plist>

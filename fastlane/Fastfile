@@ -34,6 +34,7 @@ platform :ios do
     deliver(
       skip_binary_upload: true,
       skip_screenshots:   true,
+      skip_binary_upload: true,
       skip_metadata:      false,
       force:              true
     )
@@ -55,15 +56,19 @@ platform :ios do
       project:          "BreakQuest.xcodeproj",
       export_method:    "app-store",
       export_options:   "ExportOptions.plist",
+      xcargs:           "-allowProvisioningUpdates",
       output_directory: "build/Archive",
       output_name:      "BreakQuest"
     )
 
     deliver(
-      screenshots_path:      "./AppStore/screenshots",
-      overwrite_screenshots: true,
-      submit_for_review:     true,
-      automatic_release:     false
+      screenshots_path:       "./AppStore/screenshots",
+      overwrite_screenshots:  true,
+      skip_binary_upload:     true,
+      skip_metadata:          false,
+      submit_for_review:      false,
+      automatic_release:      false,
+      force:                  true
     )
   end
 
