@@ -35,6 +35,20 @@
                ReferencedContainer = "container:BreakQuest.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "25BC59191F3252E9E2420405"
+               BuildableName = "BreakQuestWatch.app"
+               BlueprintName = "BreakQuestWatch"
+               ReferencedContainer = "container:BreakQuest.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
