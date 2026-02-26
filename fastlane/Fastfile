@@ -43,9 +43,12 @@ platform :ios do
   desc "Build, archive and upload a new release to App Store Connect"
   lane :release do
     today = Time.now.strftime("%Y%m%d")
-    tf_build = latest_testflight_build_number.to_s rescue "0"
-    new_build = if tf_build.start_with?(today)
-      "#{today}.#{tf_build.split('.').last.to_i + 1}"
+    tf_build    = latest_testflight_build_number.to_s rescue "0"
+    local_build = get_build_number(xcodeproj: "BreakQuest.xcodeproj").to_s rescue "0"
+    # Guard against TF lag: builds still processing won't appear in latest_testflight_build_number
+    ref_build = [tf_build, local_build].max
+    new_build = if ref_build.start_with?(today)
+      "#{today}.#{ref_build.split('.').last.to_i + 1}"
     else
       "#{today}.1"
     end
