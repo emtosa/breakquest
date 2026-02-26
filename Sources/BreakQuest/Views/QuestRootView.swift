@@ -20,6 +20,7 @@ struct QuestRootView: View {
         }
         .animation(.spring(response: 0.45), value: store.appPhase == .breakGame)
         .overlay(lootToast)
+        .sensoryFeedback(.success, trigger: store.newLoot != nil)
     }
 
     @ViewBuilder
@@ -37,6 +38,7 @@ struct QuestRootView: View {
                     Button { store.dismissLoot() } label: {
                         Image(systemName: "xmark").foregroundStyle(.white.opacity(0.5))
                     }
+                    .accessibilityLabel("Dismiss loot")
                 }
                 .padding(16)
                 .background(Color(red: 0.15, green: 0.1, blue: 0.25))
@@ -132,8 +134,9 @@ struct FocusTimerView: View {
                     .font(.system(size: 42, weight: .heavy, design: .rounded))
                     .foregroundStyle(.white)
                     .monospacedDigit()
+                    .contentTransition(.numericText(countsDown: true))
                 Text(phaseLabel)
-                    .font(.system(size: 12, weight: .bold, design: .rounded))
+                    .font(.caption.weight(.bold))
                     .foregroundStyle(.white.opacity(0.45))
             }
         }
@@ -151,13 +154,14 @@ struct FocusTimerView: View {
     private func questButton(label: String, icon: String, color: Color, action: @escaping () -> Void) -> some View {
         Button(action: action) {
             Label(label, systemImage: icon)
-                .font(.system(size: 17, weight: .bold, design: .rounded))
+                .font(.headline.weight(.bold))
                 .frame(minWidth: 130)
                 .padding(.vertical, 14)
                 .background(color)
                 .foregroundStyle(.white)
                 .clipShape(Capsule())
         }
+        .buttonStyle(QuestSpringPressStyle())
     }
 
     private var inventoryRow: some View {
@@ -189,6 +193,7 @@ struct FocusTimerView: View {
 
 struct BreakMiniGameView: View {
     @EnvironmentObject private var store: QuestStore
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     private var circleScale: CGFloat {
         switch store.breathPhase {
@@ -233,8 +238,8 @@ struct BreakMiniGameView: View {
                             )
                         )
                         .frame(width: 180, height: 180)
-                        .scaleEffect(circleScale)
-                        .animation(.easeInOut(duration: 0.1), value: circleScale)
+                        .scaleEffect(reduceMotion ? 1.0 : circleScale)
+                        .animation(reduceMotion ? .none : .easeInOut(duration: 0.1), value: circleScale)
 
                     VStack(spacing: 6) {
                         Text(store.breathPhase.label)
@@ -286,5 +291,14 @@ struct BreakMiniGameView: View {
         .background(.white.opacity(0.06))
         .clipShape(RoundedRectangle(cornerRadius: 16))
         .padding(.horizontal, 40)
+    }
+}
+
+// MARK: - Spring press feedback
+private struct QuestSpringPressStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .scaleEffect(configuration.isPressed ? 0.94 : 1.0)
+            .animation(.spring(response: 0.25, dampingFraction: 0.6), value: configuration.isPressed)
     }
 }
