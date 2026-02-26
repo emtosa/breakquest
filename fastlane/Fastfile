@@ -1,3 +1,18 @@
+require 'deliver'
+
+# Patch: new apps have no appStoreReviewDetail yet; skip attachment cleanup gracefully
+module ReviewAttachmentNewAppFix
+  private
+
+  def review_attachment_file(version)
+    super
+  rescue RuntimeError => e
+    raise unless e.message.include?("No data")
+    # New app version: review detail does not exist yet, no attachments to remove
+  end
+end
+Deliver::UploadMetadata.prepend(ReviewAttachmentNewAppFix)
+
 default_platform(:ios)
 
 platform :ios do

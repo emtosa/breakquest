@@ -1,1 +1,1 @@
-ADHD,breathing,break,Pomodoro,relaxation,game,loot,productivity,mindfulness,stress relief
+ADHD,breathing,break,Pomodoro,relaxation,game,loot,productivity,mindfulness
