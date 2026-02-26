@@ -1,0 +1,55 @@
+default_platform(:ios)
+
+platform :ios do
+
+  desc "Upload screenshots to App Store Connect"
+  lane :upload_screenshots do
+    deliver(
+      screenshots_path:      "./AppStore/screenshots",
+      skip_binary_upload:    true,
+      skip_metadata:         true,
+      overwrite_screenshots: true,
+      platform:              "ios",
+      force:                 true
+    )
+  end
+
+  desc "Upload metadata without screenshots or binary"
+  lane :upload_metadata do
+    deliver(
+      skip_binary_upload: true,
+      skip_screenshots:   true,
+      skip_metadata:      false,
+      force:              true
+    )
+  end
+
+  desc "Build, archive and upload a new release to App Store Connect"
+  lane :release do
+    today = Time.now.strftime("%Y%m%d")
+    tf_build = latest_testflight_build_number.to_s
+    new_build = if tf_build.start_with?(today)
+      "#{today}.#{tf_build.split('.').last.to_i + 1}"
+    else
+      "#{today}.1"
+    end
+    increment_build_number(build_number: new_build)
+
+    build_app(
+      scheme:           "BreakQuest",
+      project:          "BreakQuest.xcodeproj",
+      export_method:    "app-store",
+      export_options:   "ExportOptions.plist",
+      output_directory: "build/Archive",
+      output_name:      "BreakQuest"
+    )
+
+    deliver(
+      screenshots_path:      "./AppStore/screenshots",
+      overwrite_screenshots: true,
+      submit_for_review:     true,
+      automatic_release:     false
+    )
+  end
+
+end

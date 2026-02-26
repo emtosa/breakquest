@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15BB9E4B8DD657FF118D9051 /* ScreenshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D056966F64B1C5B754A0B5 /* ScreenshotTests.swift */; };
+		30E4F6E56B93E7D4772FAF55 /* QuestStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F65B3E1DCC5549A2AD94C7E /* QuestStore.swift */; };
+		54650EA4A73FA2A4FF3023CB /* BreakQuestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF593952AF0F57738F25EA9B /* BreakQuestApp.swift */; };
+		729063439643C0E9529D2735 /* QuestRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC72AF249C853A365FC7225 /* QuestRootView.swift */; };
+		E27778B311495BCACA4BB3FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83B661611FCB6BFF0C85BC7 /* ContentView.swift */; };
+		E78888A8C2B03A6B5D0A95D1 /* BreakQuestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48DF8B727B8DB89FC2E6DEE /* BreakQuestTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDBB461C6E705EE5CC55F1E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE7119D1DCCD0B5CF1982558 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79DE1E5D2676865F9A403D30;
+			remoteInfo = BreakQuest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F65B3E1DCC5549A2AD94C7E /* QuestStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestStore.swift; sourceTree = "<group>"; };
+		266D4218FCCFB1C46B2D2A94 /* BreakQuest.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = BreakQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54D056966F64B1C5B754A0B5 /* ScreenshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotTests.swift; sourceTree = "<group>"; };
+		707A0B3B71AE862D6D4B0522 /* BreakQuestTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = BreakQuestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C2507619B243A81BFE5961C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9FC72AF249C853A365FC7225 /* QuestRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestRootView.swift; sourceTree = "<group>"; };
+		E83B661611FCB6BFF0C85BC7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EF593952AF0F57738F25EA9B /* BreakQuestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakQuestApp.swift; sourceTree = "<group>"; };
+		F48DF8B727B8DB89FC2E6DEE /* BreakQuestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakQuestTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		00772CD3E8AB927F2FB4B752 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0F65B3E1DCC5549A2AD94C7E /* QuestStore.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		12415A219EDF8CD2C1B71D29 = {
+			isa = PBXGroup;
+			children = (
+				F97ECD6D80F0BF56F8A6C58C /* Sources */,
+				E936C8BD6F7704C957F57515 /* Tests */,
+				B7487EB0850144651F322307 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1904657C0CB51EAAD5D059DF /* BreakQuestTests */ = {
+			isa = PBXGroup;
+			children = (
+				F48DF8B727B8DB89FC2E6DEE /* BreakQuestTests.swift */,
+				54D056966F64B1C5B754A0B5 /* ScreenshotTests.swift */,
+			);
+			path = BreakQuestTests;
+			sourceTree = "<group>";
+		};
+		60AD1FAFC2C670B2764D9CDE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9FC72AF249C853A365FC7225 /* QuestRootView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6EA93A0E498042668A402084 /* BreakQuest */ = {
+			isa = PBXGroup;
+			children = (
+				EF593952AF0F57738F25EA9B /* BreakQuestApp.swift */,
+				E83B661611FCB6BFF0C85BC7 /* ContentView.swift */,
+				7C2507619B243A81BFE5961C /* Info.plist */,
+				00772CD3E8AB927F2FB4B752 /* Models */,
+				60AD1FAFC2C670B2764D9CDE /* Views */,
+			);
+			path = BreakQuest;
+			sourceTree = "<group>";
+		};
+		B7487EB0850144651F322307 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				266D4218FCCFB1C46B2D2A94 /* BreakQuest.app */,
+				707A0B3B71AE862D6D4B0522 /* BreakQuestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E936C8BD6F7704C957F57515 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1904657C0CB51EAAD5D059DF /* BreakQuestTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		F97ECD6D80F0BF56F8A6C58C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6EA93A0E498042668A402084 /* BreakQuest */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79DE1E5D2676865F9A403D30 /* BreakQuest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60EAD57E9ABA6E9354D11504 /* Build configuration list for PBXNativeTarget "BreakQuest" */;
+			buildPhases = (
+				EC7326EF74AE46B95ED61B1A /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BreakQuest;
+			packageProductDependencies = (
+			);
+			productName = BreakQuest;
+			productReference = 266D4218FCCFB1C46B2D2A94 /* BreakQuest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D72742C2D17B946F1F9FBB9A /* BreakQuestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C99BB5F6DBA5C4624AA2ADA2 /* Build configuration list for PBXNativeTarget "BreakQuestTests" */;
+			buildPhases = (
+				56539309E1C2AA3973FA75AE /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31E741E1D0A342F9DC7247FB /* PBXTargetDependency */,
+			);
+			name = BreakQuestTests;
+			packageProductDependencies = (
+			);
+			productName = BreakQuestTests;
+			productReference = 707A0B3B71AE862D6D4B0522 /* BreakQuestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE7119D1DCCD0B5CF1982558 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					79DE1E5D2676865F9A403D30 = {
+						DevelopmentTeam = RZWT5WST77;
+						ProvisioningStyle = Automatic;
+					};
+					D72742C2D17B946F1F9FBB9A = {
+						DevelopmentTeam = RZWT5WST77;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F4456C86E1D67BCA87E9EDB3 /* Build configuration list for PBXProject "BreakQuest" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 12415A219EDF8CD2C1B71D29;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79DE1E5D2676865F9A403D30 /* BreakQuest */,
+				D72742C2D17B946F1F9FBB9A /* BreakQuestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56539309E1C2AA3973FA75AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E78888A8C2B03A6B5D0A95D1 /* BreakQuestTests.swift in Sources */,
+				15BB9E4B8DD657FF118D9051 /* ScreenshotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7326EF74AE46B95ED61B1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54650EA4A73FA2A4FF3023CB /* BreakQuestApp.swift in Sources */,
+				E27778B311495BCACA4BB3FB /* ContentView.swift in Sources */,
+				729063439643C0E9529D2735 /* QuestRootView.swift in Sources */,
+				30E4F6E56B93E7D4772FAF55 /* QuestStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		31E741E1D0A342F9DC7247FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79DE1E5D2676865F9A403D30 /* BreakQuest */;
+			targetProxy = EDBB461C6E705EE5CC55F1E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		116671E8FD278B4BE142C707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RZWT5WST77;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.foculoom.breakquest.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Break Quest.app/Break Quest";
+			};
+			name = Debug;
+		};
+		19E4A01F1DBCBD3D604111A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RZWT5WST77;
+				INFOPLIST_FILE = Sources/BreakQuest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.foculoom.breakquest;
+				PRODUCT_MODULE_NAME = BreakQuest;
+				PRODUCT_NAME = "Break Quest";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D8F4075E1F6AF1B1CC6924C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 20260226.1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1E6E7BD54AB39783E55D9D7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RZWT5WST77;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.foculoom.breakquest.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Break Quest.app/Break Quest";
+			};
+			name = Release;
+		};
+		54CC9F94007F5784252B8D91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 20260226.1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		896544CB81E75103F0761994 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RZWT5WST77;
+				INFOPLIST_FILE = Sources/BreakQuest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.foculoom.breakquest;
+				PRODUCT_MODULE_NAME = BreakQuest;
+				PRODUCT_NAME = "Break Quest";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		60EAD57E9ABA6E9354D11504 /* Build configuration list for PBXNativeTarget "BreakQuest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19E4A01F1DBCBD3D604111A5 /* Debug */,
+				896544CB81E75103F0761994 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C99BB5F6DBA5C4624AA2ADA2 /* Build configuration list for PBXNativeTarget "BreakQuestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				116671E8FD278B4BE142C707 /* Debug */,
+				1E6E7BD54AB39783E55D9D7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F4456C86E1D67BCA87E9EDB3 /* Build configuration list for PBXProject "BreakQuest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D8F4075E1F6AF1B1CC6924C /* Debug */,
+				54CC9F94007F5784252B8D91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE7119D1DCCD0B5CF1982558 /* Project object */;
+}
