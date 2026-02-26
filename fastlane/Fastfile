@@ -42,7 +42,7 @@ platform :ios do
   desc "Build, archive and upload a new release to App Store Connect"
   lane :release do
     today = Time.now.strftime("%Y%m%d")
-    tf_build = latest_testflight_build_number.to_s
+    tf_build = latest_testflight_build_number.to_s rescue "0"
     new_build = if tf_build.start_with?(today)
       "#{today}.#{tf_build.split('.').last.to_i + 1}"
     else
