@@ -117,3 +117,14 @@ footer { background: var(--stone-100); border-top: 1px solid var(--border); padd
   section { padding: 60px 0; }
   .hero { padding: 72px 0 60px; }
 }
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+  font-size: .95rem;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+.footer-logo:hover { opacity: .8; text-decoration: none; }
