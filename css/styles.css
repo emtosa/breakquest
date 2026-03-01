@@ -136,3 +136,24 @@ footer { background: var(--stone-100); border-top: 1px solid var(--border); padd
   text-align: center;
   opacity: .8;
 }
+
+/* ── Waitlist / notify link ── */
+.btn-notify {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 13px 24px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: .95rem;
+  background: transparent;
+  color: var(--text-primary);
+  border: 1.5px solid var(--border);
+  text-decoration: none;
+  transition: border-color .15s, transform .1s;
+}
+.btn-notify:hover {
+  border-color: var(--text-secondary, #57534e);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
