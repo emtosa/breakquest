@@ -128,3 +128,11 @@ footer { background: var(--stone-100); border-top: 1px solid var(--border); padd
   text-decoration: none;
 }
 .footer-logo:hover { opacity: .8; text-decoration: none; }
+
+.footer-disclaimer {
+  font-size: .72rem;
+  color: var(--stone-400, #a8a29e);
+  margin-top: .75rem;
+  text-align: center;
+  opacity: .8;
+}
