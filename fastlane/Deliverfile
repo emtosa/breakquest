@@ -1,5 +1,0 @@
-screenshots_path "./AppStore/screenshots"
-overwrite_screenshots true
-platform "ios"
-force true
-app_version "1.0"
